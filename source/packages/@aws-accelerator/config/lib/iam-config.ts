@@ -94,6 +94,7 @@ export class IamConfigTypes {
     name: t.nonEmptyString,
     policies: t.optional(this.identityCenterPoliciesConfig),
     sessionDuration: t.optional(t.number),
+    description: t.optional(t.string),
   });
 
   /**
@@ -1358,6 +1359,12 @@ export class IdentityCenterPermissionSetConfig
    * @default undefined
    */
   readonly sessionDuration: number | undefined = undefined;
+
+  /**
+   * A description string for the Permission Set
+   * @default undefined
+   */
+  readonly description: string | undefined = undefined;
 }
 
 /**
