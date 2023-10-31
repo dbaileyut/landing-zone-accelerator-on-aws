@@ -1,4 +1,3 @@
-.env
 *.js
 *.js.map
 !deployment/.typescript/cdk-solution-helper/index.js
